@@ -1,14 +1,18 @@
 <template>
   <div id="app">
-    <router-link to="/">home</router-link>
-    <router-link to="/about-me">about-me</router-link>
+    <Nav></Nav>
     <router-view/>
   </div>
 </template>
 
 <script>
+import Nav from './components/partials/Nav'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    Nav
+  }
 }
 </script>
 
@@ -17,8 +21,8 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* text-align: center; */
   color: #2c3e50;
-  /* margin-top: 60px; */
+  padding-left: 10px;
+  padding-right: 10px;
 }
 </style>
